@@ -1,0 +1,27 @@
+# Python 3.12
+
+# Ingest: Coinbase WebSocket feed and REST product book validation
+websockets==17.2
+httpx==0.28.1
+orjson==3.13.0
+
+# Message bus: Redpanda (Kafka API)
+aiokafka==0.14.0
+
+# Archive: Parquet on MinIO (S3 API)
+pyarrow==26.0.0
+boto3==1.43.111
+
+# Serving and metrics: ClickHouse sink, Prometheus exporters
+clickhouse-connect==1.10.0
+prometheus-client==0.26.0
+
+# Orchestration and modeling: Dagster jobs, dbt models on ClickHouse
+dagster==1.13.26
+dagster-webserver==1.13.26
+dbt-core==1.12.5
+dbt-clickhouse==1.10.3
+
+# Testing
+pytest==9.1.1
+pytest-asyncio==1.4.0
